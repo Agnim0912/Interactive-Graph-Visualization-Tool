@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="heading">
+        <h1 id="Status">Welcome</h1>
+        <div style="display: flex;padding: auto;">
+            <div>
+                <h2 style="padding: auto;margin:auto;">Choose Algorithm:</h2>
+
+                <input type="radio" id="DFS" name="Pathfinding Algorithm" value="DFS">
+                <label for="DFS">DFS</label>
+                <input type="radio" id="BFSq" name="Pathfinding Algorithm" value="BFSq">
+                <label for="BFSq">BFSQueue</label>
+		    <input type="radio" id="Dijkstra" name="Pathfinding Algorithm" value="Dijkstra">
+                <label for="Dijkstra">Dijkstra</label>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="main1">
+        <div class="main"></div>
+    </div>
+
+    <div class="buttons">
+        <div class="button-group">
+            <div  style="display: flex;padding: auto;">
+                <h2 style="margin: 0%;height: 100%; vertical-align: middle;display: flex;align-items: center;">Choose the Mode : </h2>
+                <div >
+                    <button id="ButtonUI" onclick="Border()">Set Border</button>
+                    <button id="ButtonUI" onclick="Start_point()">Set Start-Point</button>
+                    <button id="ButtonUI" onclick="End_point()">Set End-Point</button>
+                </div>
+            </div>
+        </div>
+        <div class="button-group">
+            <button id="ButtonUI" onclick="gen()">Refresh</button>
+            <button id="ButtonUI" onclick="Solve()">Solve</button>
+        </div>
+    </div>
+</body>
+</html>
